@@ -1,20 +1,16 @@
-user_input = input("Введите, пожалуйста, номер месяца: ")
-month = int(user_input)
-month_list = {
-    1 : 30,
-    2 : 28,
-    3 : 31,
+zoo_pet_mass = {
+    'lion': 300,
+    'skunk': 5,
+    'elephant': 5000,
+    'horse': 400,
 }
-if user_input in month_list:
-    print(month_list.get(user_input))
+total_mass = 0
+for animal in zoo_pet_mass:
+    print(animal, zoo_pet_mass[animal])
+    total_mass += zoo_pet_mass[animal]
+print('Общая масса животных', total_mass)
 
-user_input = input("Введите, пожалуйста, номер месяца: ")
-month = int(user_input)
-print('Вы ввели', month)
-month_list = {
-    1: 30,
-    2: 28,
-    3: 31,
-}
-if month in month_list:
-    print(month_list.get(month))
+
+
+
+

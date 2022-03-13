@@ -20,4 +20,4 @@ while a<10:
 print(round(money,2))
 
 
-# TODO здесь ваш код
+

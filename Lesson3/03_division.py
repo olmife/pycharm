@@ -15,4 +15,4 @@ while a>b :
     c+=1
 print(c)
 
-# TODO здесь ваш код
+

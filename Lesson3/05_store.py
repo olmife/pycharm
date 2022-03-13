@@ -46,10 +46,34 @@ store = {
 #         подсчет стоимости товара
 #     вывод на консоль количества и стоимости товара на складе
 
-# TODO здесь ваш код
+
+
+lamp_summ = 0
+lamp_cost = 0
+chair_summ = 0
+chair_cost = 0
+sofa_summ = 0
+sofa_cost = 0
+table_summ = 0
+table_cost = 0
+
+for item in store:
+    if item == goods['Лампа']:
+        for lamp in store[item]:
+            quantity, cost= lamp['quantity'],lamp['price']
+            print(quantity,cost)
+            lamp_summ+=quantity
+            lamp_cost+=quantity*cost
+    elif item == goods['Стол']:
+        for table in store[item]:
+            quantity, cost = table['quantity'],lamp['price']
+            table_summ +=quantity
+            table_cost +=cost*quantity
 
 
 
+print(lamp_summ,lamp_cost)
+print(table_summ,table_cost)
 
 
 
