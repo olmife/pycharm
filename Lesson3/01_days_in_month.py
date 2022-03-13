@@ -40,6 +40,6 @@ month_list = {
     2 : 28,
     3 : 31,
 }
-if month in month_list:K
+if month in month_list
     print(month_list.get(month))
 
