@@ -10,5 +10,14 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
+a=1
+money = 0
+while a<10:
+    money+=(expenses-educational_grant)
+    a+=1
+    expenses+=((expenses/100)*3)
+
+print(round(money,2))
+
 
 # TODO здесь ваш код
