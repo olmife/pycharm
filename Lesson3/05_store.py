@@ -66,14 +66,23 @@ for item in store:
             lamp_cost+=quantity*cost
     elif item == goods['Стол']:
         for table in store[item]:
-            quantity, cost = table['quantity'],lamp['price']
+            quantity, cost = table['quantity'],table['price']
             table_summ +=quantity
             table_cost +=cost*quantity
-
-
-
-print(lamp_summ,lamp_cost)
-print(table_summ,table_cost)
+    elif item == goods['Диван']:
+        for sofa in store[item]:
+            quantity, cost = sofa['quantity'], sofa ['price']
+            sofa_summ += quantity
+            sofa_cost += cost * quantity
+    elif item == goods['Стул']:
+        for chair in store[item]:
+            quantity,cost = chair['quantity'], chair['price']
+            chair_summ += quantity
+            chair_cost += quantity*cost
+print('Всего ламп ',lamp_summ,'на сумму',lamp_cost, 'руб')
+print('Всего столов ',table_summ,'на сумму',table_cost,'руб')
+print('Всего стульев',chair_summ,'на сумму',chair_summ,'руб')
+print('Всего диванов',sofa_summ,'на сумму',sofa_cost,'руб')
 
 
 
