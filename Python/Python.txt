@@ -1,0 +1,79 @@
+Install 
+	https://python-scripts.com/install-python
+	$ sudo add-apt-repository ppa:deadsnakes/ppa
+	$ sudo apt-get update
+	$ sudo apt-get install python3.6
+	installing pip:
+		sudo apt install software-properties-common
+		apt --fix-broken install
+		apt --fix-broken instal
+		sudo add-apt-repository ppa:deadsnakes/ppa
+		sudo apt update
+		sudo apt install python3-venv python3-pip
+		whereis pip3 #wait for
+	install simple draw
+		python3 -m pip install simple-draw #install simple draw
+		or sudo pip3 install simple-draw	
+		import simple_draw as sd # in python to check if installed
+		windows:
+		pip install simple_draw # or in pycharm - settings project inetrpr 
+		
+featchers
+	Ctrl+p #show parametrs in funcshions
+    Alt+Enter #import library
+    Interpretator change->Setting->Project Interpret
+
+строки 
+car= 'duster'
+car.find(u) ищем u выдает позицию или rfind c конца строки
+car.replace('u','r') местами поменять
+car.upper() в верхний регистр
+cer.lower() все в нижний регистр
+car.isalpha() являются ли все буквы или isnumeric
+ 
+
+списки
+List=[1,2,3,4,5]
+list[-2:] от минус второго значения и до конца
+list.append(332) добавление элемента
+list.extend([5,5,5]) расширили на список
+list.insert(3,'aaa') расширяет на место 3
+del list[6] удалить элемент  номер 6
+list.pop(6) удалить элемент  номер 6
+list.remove(5) удалить первую цифру 5
+list.pop(6)
+list + [5,6,87] добавили
+matrix= [[5,4,8],[1,2,3],[8,,6,1]] список списков
+matrix[1][1] выведет 5
+[1,2,3] < [3,2,1] сравнение списков, true
+5 in list входит ли 
+id(list) выводит идентификатор списка
+range(100) создает генерацию 0-100
+list(range(5,10,2)) создает генерацию с 5 по 10 с шагом 2 (5.7.9)
+list.count(2) считает сколько 2 в списке
+min(list) минимальное занчение в списке
+list.sort() сортирует от мин к максимальному
+print(list.index(3)) выдаст индекс цифры 4
+
+словари {}
+my_box={}
+my_box['слон']='эелефант'
+my_box={"car":'duster2','windows':'6'}
+77 in my_box есть ли?
+получение метода словарей
+my_box['rfr'] нет его
+my_box.get('rfr', 'murz') если нет rfr то выдаст второе значение
+my_box.setdefault('cat','murzik') setdefault еще и в словарь добавит
+составные объекты
+
+множество
+set()
+my_set=set([12,2,3,52,,1,2,3])
+other_set= {1,2,3,4,5,3,2,11}
+my_set | other_set соединение уникальных
+my_set & other_set выдать пересечение
+my_set - other_set оставить тех из 1го кого нет во втором
+
+добавоение .add()
+удаление .pop() discard()
+обновление .update()
