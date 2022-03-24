@@ -1,27 +1,13 @@
-Install 
-	https://python-scripts.com/install-python
-	$ sudo add-apt-repository ppa:deadsnakes/ppa
-	$ sudo apt-get update
-	$ sudo apt-get install python3.6
-	installing pip:
-		sudo apt install software-properties-common
-		apt --fix-broken install
-		apt --fix-broken instal
-		sudo add-apt-repository ppa:deadsnakes/ppa
-		sudo apt update
-		sudo apt install python3-venv python3-pip
-		whereis pip3 #wait for
-	install simple draw
-		python3 -m pip install simple-draw #install simple draw
-		or sudo pip3 install simple-draw	
-		import simple_draw as sd # in python to check if installed
-		windows:
-		pip install simple_draw # or in pycharm - settings project inetrpr 
-		
-featchers
-	Ctrl+p #show parametrs in funcshions
-    Alt+Enter #import library
-    Interpretator change->Setting->Project Interpret
+спец кнопки
+CTRL+p на функции покажет варианты
+CTRL+SPACE покажет все варианты
+CTRL+y вперед изменения
+
+
+утмановка
+pyyhon на оф сайте
+сustom  меняем путь для установке
+
 
 строки 
 car= 'duster'
@@ -77,3 +63,8 @@ my_set - other_set оставить тех из 1го кого нет во вт�
 добавоение .add()
 удаление .pop() discard()
 обновление .update()
+
+
+
+
+

@@ -16,11 +16,11 @@ end_x,end_y=350,450
 # def line(point1,point2,step):
 
 for color in rainbow_colors:
-    point1 = sd.get_point(start_x, start_y)
-    point2 = sd.get_point(end_x, end_y)
-    sd.line(start_point=point1, end_point=point2,color=color)
-    start_x+=20
-    end_x+=20
+        point1 = sd.get_point(start_x, start_y)
+        point2 = sd.get_point(end_x, end_y)
+        sd.line(start_point=point1, end_point=point2,color=color)
+        start_x+=5
+        end_x+=5
 sd.pause()
 
 
