@@ -24,46 +24,56 @@ import simple_draw as sd
 # Пригодятся функции
 # sd.get_point()
 # sd.get_vector()
-# sd.line()
+
 # Результат решения см lesson_004/results/exercise_01_shapes.jpg
-
-length = 100
-point = sd.get_point(400, 400)
+# def triangle(point,angle,lenth):
+#     v1=sd.get_vector(start_point=point,angle=angle,length=length)
+#     v1.draw()
+#     v2=sd.get_vector(start_point=v1.end_point,angle=angle+120,length=length)
+#     v2.draw()
+#     v3=sd.get_vector(start_point=v2.end_point,angle=v2.angle+120,length=length)
+#     v3.draw()
+# def coub(point,angle,lenth):
+#     v1 = sd.get_vector(start_point=point, angle=angle, length=length)
+#     v1.draw()
+#     v2 = sd.get_vector(start_point=v1.end_point, angle=angle+90, length=length)
+#     v2.draw()
+#     v3 = sd.get_vector(start_point=v2.end_point, angle=angle+180, length=length)
+#     v3.draw()
+#     v4 = sd.get_vector(start_point=v3.end_point, angle=angle +270, length=length)
+#     v4.draw()
+point1= sd.get_point(400, 400)
 point2= sd.get_point(100,400)
-point3= sd.get_point(100,100)
+point3= sd.get_point(100, 100)
 point4= sd.get_point(400,100)
-angle=0
-
-def triangle(point,angle,lenth):
-    v1=sd.get_vector(start_point=point,angle=angle,length=length)
-    v1.draw()
-    v2=sd.get_vector(start_point=v1.end_point,angle=angle+120,length=length)
-    v2.draw()
-    v3=sd.get_vector(start_point=v2.end_point,angle=v2.angle+120,length=length)
-    v3.draw()
-def coub(point,angle,lenth):
-    v1 = sd.get_vector(start_point=point, angle=angle, length=length)
-    v1.draw()
-    v2 = sd.get_vector(start_point=v1.end_point, angle=angle+90, length=length)
-    v2.draw()
-    v3 = sd.get_vector(start_point=v2.end_point, angle=angle+180, length=length)
-    v3.draw()
-    v4 = sd.get_vector(start_point=v3.end_point, angle=angle +270, length=length)
-    v4.draw()
-
-def corner5(point,angle,lenth):
+def corner5(point,angle,length):
     v1 = sd.get_vector(start_point=point, angle=angle, length=length)
     v1.draw()
     return v1.end_point
-
-triangle(point,angle,length)
-coub(point2,angle,length)
-point = sd.get_point(100, 100)
-
-for angle in range(0,361,72):
-    point=corner5(point,angle,length)
-    # print('returned end_point',end_point)
-    # print("must bt",point)
+# triangle
+point=point1
+for angle in range(0,240,120):
+    point=corner5(point=point,angle=angle,length=100)
+else :
+     sd.line(start_point=point1,end_point=point)
+# coub
+point= point2
+for angle in range(0,270,90):
+    point=corner5(point=point,angle=angle,length=100)
+else :
+    sd.line(start_point=point2,end_point=point)
+# corner5
+point = point3
+for angle in range(0,270,72):
+    point=corner5(point,angle,100)
+else :
+    sd.line(start_point=point3,end_point=point)
+# corner6
+point = point4
+for angle in range(0,300,60):
+    point=corner5(point,angle,120)
+else :
+    sd.line(start_point=point4,end_point=point)
 
 
 # Часть 1-бис.
