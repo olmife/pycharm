@@ -42,16 +42,16 @@
 #     v3.draw()
 #     v4 = sd.get_vector(start_point=v3.end_point, angle=angle +270, length=length)
 #     v4.draw()
-user_input = input("Введите, пожалуйста, номер месяца: ")
-month = int(user_input)
-print('Вы ввели', month)
-month_list = {
-    1 : 12,
-    2 : 28,
-    3 : 31,
-}
-if month in month_list:
-    print(month_list.get(month))
+# user_input = input("Введите, пожалуйста, номер месяца: ")
+# month = int(user_input)
+# print('Вы ввели', month)
+# month_list = {
+#     1 : 12,
+#     2 : 28,
+#     3 : 31,
+# }
+# if month in month_list:
+#     print(month_list.get(month))
 import simple_draw as sd
 point1= sd.get_point(400, 400)
 point2= sd.get_point(100,400)
@@ -59,7 +59,7 @@ point3= sd.get_point(100, 100)
 point4= sd.get_point(400,100)
 def corner5(point,angle,length):
     v1 = sd.get_vector(start_point=point, angle=angle, length=length)
-    v1.draw(color=sd.COLOR_RED)
+    v1.draw()
     return v1.end_point
 # triangle
 point=point1

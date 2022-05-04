@@ -46,7 +46,8 @@ if color in color_list:
         v1 = sd.get_vector(start_point=point, angle=angle, length=length)
         v1.draw(color=color)
         return v1.end_point
-    # triangle
+    # triangle5
+
     point = point1
     for angle in range(0, 240, 120, ):
         point = corner5(point=point, angle=angle, length=100, color=shape_color)
